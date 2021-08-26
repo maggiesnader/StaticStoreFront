@@ -13,44 +13,42 @@ body {
     margin:0;
     padding: 0;
     background-color: #36592c;
-    position: relative;
-
+    display: flex;
+    flex-direction: row;
 }
 
-.navBar .navBarLinks img {
+.logo {
+    height:80px;
+    width:80px; 
+    margin: 20px 20px 20px 30px;
+}
+
+.links {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    margin: 35px 0 0 0;
+    padding: 0 25px 0 0;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.links a {
+    text-decoration: none;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shoppingCart {
+    height:80px;
+    width:80px;
+    margin:20px 0 20px 20px;
+}
+
+.navBar img {
     height:40px;
     width:40px;
     border-radius:50px;
-    position: relative;
-}
-
-.navBar .navBarLinks .logo {
-    position:relative;
-    top:20px;
-    left:20px;
-}
-
-.navBar .navBarLinks .links {
-    width:100%;
-    height:100px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0 0 100px 0;
-    text-align: center;
-    position: relative;
-    box-align:center;
-}
-
-.navBar .navBarLinks a {
-    text-decoration: none;
-    color: white;
-}
-
-.navBar .navBarLinks .shoppingCart {
-    width: 100px;
-    height: 30px;
-    position: relative;
-    bottom: 225px;
-    left: 1460px;
 }
 
 .titleSection {
@@ -83,8 +81,8 @@ body {
 }
 
 .purchasingSections .sectionLinks img {
-    height: 150px;
-    width: 150px;
+    height: 285px;
+    width: 305px;
     border-radius: 8px;
 }
 
@@ -93,23 +91,65 @@ body {
     width: auto;
     margin: 40px;
     padding: 12px 6px;
-    border: double #36592c 2px;
+    border: double #36592c 6px;
     border-radius: 8px;
     display: flex;
     justify-content:center;
+}
 
+.purchasingSections h2 {
+    font-size: 30px;
+    margin: 15px;
 }
 
 .sectionLinks {
     height: 40%;
     width: 40%;
     margin: 0 6px;
-    padding: 10px;
-    border: solid #36592c 2px;
+    padding: 0 10px 10px 10px;
+    border: double #36592c 4px;
     border-radius: 8px;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #36592c;
 }
 
+.otherSectionsLinks img {
+    height: 265px;
+    width: 365px;
+    border-radius: 8px;
+}
 
+.otherSections {
+    height: 30%;
+    width: 60%;
+    margin: 40px auto;
+    padding: 12px 6px;
+    border: double #36592c 6px;
+    border-radius: 8px;
+    display: flex;
+    justify-content:center;
+
+}
+
+.otherSectionsLinks {
+    height: 40%;
+    width: 50%;
+    margin: 0 6px;
+    padding: 0 10px 10px 10px;
+    border: double #36592c 4px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #36592c;
+}
+
+.otherSections h3 {
+    font-size: 30px;
+    margin: 15px;
+}
+
+.footer {
+
+}
