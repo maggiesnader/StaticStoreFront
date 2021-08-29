@@ -54,30 +54,41 @@ body {
 .titleSection {
     width: auto;
     height: 600px;
+    margin: 40px;
     background: url(assets/farm.jpg) center;
     background-repeat: no-repeat;
-    text-align:right;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleSectionText {
+    width: 700px;
+    height: 600px;
+    /*justify-content: right;*/
+    margin: 0 60%;
 }
 
 .titleSection h1{
     width: auto;
-    height: 300px;
+    height: 100px;
+    margin: 0;
+    padding: 330px 200px 0 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     color: white;
     position: relative;
-    padding: 300px 50px 0 50px;
+ 
 }   
 
 .titleSection p {
-    width: 500px;
-    height: 200px;
+    min-width: 400px;
+    height: 300px;
+    margin: 0 200px 0 0;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: relative;
-    padding: 0 50px;
-    bottom: 270px;
-    left: 920px;
+    
 }
 
 .purchasingSections .sectionLinks img {
@@ -122,7 +133,7 @@ body {
 
 .otherSections {
     height: 30%;
-    width: 60%;
+    width: 80%;
     margin: 40px auto;
     padding: 12px 6px;
     border: double #36592c 6px;
@@ -150,6 +161,25 @@ body {
     margin: 15px;
 }
 
+.footer img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .footer {
+    height: 40px;
+    width: auto;
+    padding:25px;
+    background-color: #36592c;
+    display: flex;
+    justify-content: space-evenly;
 
 }
